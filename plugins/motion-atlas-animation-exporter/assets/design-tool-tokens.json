@@ -1,0 +1,37 @@
+{
+  "name": "Motion Atlas Motion Tokens",
+  "tokens": {
+    "ease.premium": {
+      "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "type": "cubicBezier"
+    },
+    "duration.fast": {
+      "value": 180,
+      "type": "duration"
+    },
+    "duration.standard": {
+      "value": 280,
+      "type": "duration"
+    },
+    "duration.slow": {
+      "value": 720,
+      "type": "duration"
+    },
+    "spring.cta": {
+      "value": {
+        "stiffness": 360,
+        "damping": 24,
+        "mass": 0.35
+      },
+      "type": "spring"
+    },
+    "spring.layout": {
+      "value": {
+        "stiffness": 420,
+        "damping": 28,
+        "mass": 0.42
+      },
+      "type": "spring"
+    }
+  }
+}

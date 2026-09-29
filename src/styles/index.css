@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: #03040a;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #03040a;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.motion-slider {
+  height: 0.3rem;
+  appearance: none;
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, rgba(92, 214, 232, 0.92), rgba(149, 117, 232, 0.82)),
+    rgba(255, 255, 255, 0.12);
+  outline: none;
+}
+
+.motion-slider::-webkit-slider-thumb {
+  width: 1rem;
+  height: 1rem;
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: 999px;
+  background: #ededf4;
+  box-shadow: 0 0 16px rgba(92, 214, 232, 0.5);
+}
+
+.motion-slider::-moz-range-thumb {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: 999px;
+  background: #ededf4;
+  box-shadow: 0 0 16px rgba(92, 214, 232, 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

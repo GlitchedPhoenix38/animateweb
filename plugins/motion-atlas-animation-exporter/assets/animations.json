@@ -1,0 +1,65 @@
+{
+  "version": "0.1.0",
+  "source": "Motion Atlas",
+  "animations": [
+    {
+      "id": "magnetic-confirm",
+      "name": "Magnetic Confirm",
+      "category": "micro-interactions",
+      "description": "Tactile CTA lift with glow, scale, and spring feedback.",
+      "tokens": {
+        "duration": 280,
+        "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "spring": {
+          "stiffness": 360,
+          "damping": 24,
+          "mass": 0.35
+        }
+      },
+      "framer": "whileHover={{ scale: 1.04, y: -3 }} whileTap={{ scale: 0.98 }} transition={{ type: 'spring', stiffness: 360, damping: 24 }}",
+      "css": ".motion-magnetic-confirm{transition:transform 280ms cubic-bezier(.16,1,.3,1),box-shadow 280ms ease}.motion-magnetic-confirm:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 0 40px rgba(110,168,255,.28)}.motion-magnetic-confirm:active{transform:scale(.98)}"
+    },
+    {
+      "id": "liquid-toggle",
+      "name": "Liquid Toggle",
+      "category": "micro-interactions",
+      "description": "Glass toggle with a morphing spring thumb.",
+      "tokens": {
+        "duration": 420,
+        "easing": "spring",
+        "spring": {
+          "stiffness": 420,
+          "damping": 28,
+          "mass": 0.42
+        }
+      },
+      "framer": "<motion.span layout transition={{ type: 'spring', stiffness: 420, damping: 28 }} />",
+      "css": ".motion-liquid-toggle-thumb{transition:transform 420ms cubic-bezier(.16,1,.3,1),filter 420ms ease}.motion-liquid-toggle[data-state='on'] .motion-liquid-toggle-thumb{transform:translateX(100%);filter:drop-shadow(0 0 22px rgba(167,139,250,.45))}"
+    },
+    {
+      "id": "orbital-loader",
+      "name": "Orbital Loader",
+      "category": "loaders",
+      "description": "Rotating orbit with a pulsing center for premium loading states.",
+      "tokens": {
+        "duration": 2400,
+        "easing": "linear",
+        "repeat": "infinite"
+      },
+      "framer": "animate={{ rotate: 360 }} transition={{ duration: 2.4, repeat: Infinity, ease: 'linear' }}",
+      "css": "@keyframes motion-atlas-orbit{to{transform:rotate(360deg)}}.motion-orbital-loader{animation:motion-atlas-orbit 2.4s linear infinite}"
+    },
+    {
+      "id": "glass-route",
+      "name": "Glass Route Shift",
+      "category": "transitions",
+      "description": "Page transition using fade, vertical drift, and blur.",
+      "tokens": {
+        "duration": 720,
+        "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+      },
+      "framer": "initial={{ opacity: 0, y: 28, filter: 'blur(16px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }} exit={{ opacity: 0, y: -18, filter: 'blur(10px)' }}",
+      "css": "@keyframes motion-glass-route{from{opacity:0;transform:translateY(28px);filter:blur(16px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}.motion-glass-route{animation:motion-glass-route 720ms cubic-bezier(.16,1,.3,1) both}"
+    }
+  ]
+}

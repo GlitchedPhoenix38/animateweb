@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-label="Interface choreography thumbnail">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0B1020"/><stop offset="1" stop-color="#03040A"/></linearGradient>
+    <linearGradient id="line" x1="0" x2="1"><stop stop-color="#67E8F9"/><stop offset="1" stop-color="#A78BFA"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="960" height="640" rx="44" fill="url(#bg)"/>
+  <rect x="56" y="54" width="848" height="532" rx="34" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".14"/>
+  <rect x="96" y="98" width="256" height="390" rx="24" fill="#fff" fill-opacity=".08"/>
+  <rect x="388" y="98" width="476" height="88" rx="22" fill="#fff" fill-opacity=".09"/>
+  <rect x="388" y="222" width="210" height="266" rx="24" fill="#6EA8FF" fill-opacity=".13"/>
+  <rect x="632" y="222" width="232" height="266" rx="24" fill="#A78BFA" fill-opacity=".12"/>
+  <path d="M144 422C286 242 496 210 802 136" fill="none" stroke="url(#line)" stroke-width="4" stroke-linecap="round" filter="url(#glow)">
+    <animate attributeName="stroke-dasharray" values="20 840;260 600;20 840" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dashoffset" values="0;-860" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="144" cy="422" r="9" fill="#67E8F9" filter="url(#glow)"/>
+  <circle cx="802" cy="136" r="9" fill="#A78BFA" filter="url(#glow)"/>
+</svg>

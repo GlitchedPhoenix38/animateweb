@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-label="Microinteraction system thumbnail">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%"><stop stop-color="#1F2A55"/><stop offset=".48" stop-color="#0A0D16"/><stop offset="1" stop-color="#03040A"/></radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="960" height="640" rx="44" fill="url(#bg)"/>
+  <g stroke="#fff" stroke-opacity=".14">
+    <rect x="106" y="120" width="748" height="400" rx="34" fill="#fff" fill-opacity=".055"/>
+    <path d="M226 192h508M226 320h508M226 448h508"/>
+    <path d="M354 120v400M606 120v400"/>
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="354" cy="320" r="58" fill="#6EA8FF" fill-opacity=".25" stroke="#6EA8FF"/>
+    <circle cx="606" cy="192" r="48" fill="#A78BFA" fill-opacity=".24" stroke="#A78BFA">
+      <animate attributeName="r" values="42;54;42" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <rect x="570" y="414" width="72" height="68" rx="18" fill="#67E8F9" fill-opacity=".22" stroke="#67E8F9"/>
+    <path d="M306 320h96M606 240v174" stroke="#fff" stroke-opacity=".32" stroke-width="2" stroke-dasharray="8 10"/>
+  </g>
+</svg>

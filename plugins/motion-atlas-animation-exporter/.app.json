@@ -1,0 +1,6 @@
+{
+  "name": "motion-atlas-animation-exporter",
+  "displayName": "Motion Atlas Animation Exporter",
+  "entry": "./scripts/export-animation.js",
+  "capabilities": ["copy", "export", "design-tool-integration"]
+}

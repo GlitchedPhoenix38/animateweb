@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Abstract floating glass shapes">
+  <defs>
+    <linearGradient id="glassA" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".58"/>
+      <stop offset="38%" stop-color="#6EA8FF" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity=".11"/>
+    </linearGradient>
+    <linearGradient id="glassB" x1="1" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#67E8F9" stop-opacity=".42"/>
+      <stop offset="52%" stop-color="#fff" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity=".28"/>
+    </linearGradient>
+    <radialGradient id="light" cx="30%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".8"/>
+      <stop offset="30%" stop-color="#9DC7FF" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#03040A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="28" stdDeviation="26" flood-color="#000" flood-opacity=".46"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="18" flood-color="#6EA8FF" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="none"/>
+  <ellipse cx="382" cy="704" rx="190" ry="36" fill="#6EA8FF" opacity=".16" filter="url(#soft)"/>
+  <ellipse cx="820" cy="710" rx="230" ry="42" fill="#A78BFA" opacity=".14" filter="url(#soft)"/>
+  <g filter="url(#shadow)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -18;0 0" dur="7s" repeatCount="indefinite"/>
+      <path d="M256 196 482 142l130 190-140 208-246-50-78-194z" fill="url(#glassA)" stroke="#fff" stroke-opacity=".24" stroke-width="2"/>
+      <path d="M286 214 468 172l92 160-106 156-194-38-56-146z" fill="url(#light)" opacity=".8"/>
+      <path d="M256 196 472 540" stroke="#fff" stroke-opacity=".18"/>
+      <path d="M482 142 226 490" stroke="#67E8F9" stroke-opacity=".16"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 20;0 0" dur="8.5s" repeatCount="indefinite"/>
+      <path d="M720 246c92-50 232-4 270 92 40 102-20 222-126 254-98 30-216-28-250-124-30-86 18-178 106-222z" fill="url(#glassB)" stroke="#fff" stroke-opacity=".22" stroke-width="2"/>
+      <path d="M766 282c62-28 152 8 178 72 27 68-14 145-82 166-66 20-142-20-164-82-20-58 8-126 68-156z" fill="url(#light)" opacity=".72"/>
+      <path d="M662 440c104-54 216-52 334 8" fill="none" stroke="#fff" stroke-opacity=".2"/>
+      <path d="M746 250c72 90 102 202 88 338" fill="none" stroke="#67E8F9" stroke-opacity=".15"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;14 -12;0 0" dur="6.8s" repeatCount="indefinite"/>
+      <path d="M566 594 670 522l112 70-28 130-132 34-96-68z" fill="url(#glassA)" stroke="#fff" stroke-opacity=".22" stroke-width="2"/>
+      <path d="M594 604 672 552l78 50-20 92-96 26-72-48z" fill="url(#light)" opacity=".7"/>
+    </g>
+  </g>
+</svg>

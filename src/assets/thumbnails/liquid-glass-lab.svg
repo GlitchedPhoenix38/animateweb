@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-label="Liquid glass lab thumbnail">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#03040A"/><stop offset=".55" stop-color="#11172B"/><stop offset="1" stop-color="#271449"/></linearGradient>
+    <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff" stop-opacity=".48"/><stop offset=".42" stop-color="#67E8F9" stop-opacity=".18"/><stop offset="1" stop-color="#A78BFA" stop-opacity=".26"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="26" stdDeviation="22" flood-color="#000" flood-opacity=".45"/><feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#6EA8FF" flood-opacity=".22"/></filter>
+  </defs>
+  <rect width="960" height="640" rx="44" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <path d="M226 240c74-108 254-130 342-48 94 88 56 256-72 312-116 50-284-4-320-114-16-50 18-100 50-150z" fill="url(#glass)" stroke="#fff" stroke-opacity=".22" stroke-width="2">
+      <animate attributeName="d" values="M226 240c74-108 254-130 342-48 94 88 56 256-72 312-116 50-284-4-320-114-16-50 18-100 50-150z;M246 214c94-76 248-98 330 4 78 98 16 244-94 292-126 54-272-30-300-124-18-62 16-126 64-172z;M226 240c74-108 254-130 342-48 94 88 56 256-72 312-116 50-284-4-320-114-16-50 18-100 50-150z" dur="8s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="642" cy="238" r="76" fill="#6EA8FF" fill-opacity=".12" stroke="#67E8F9" stroke-opacity=".45"/>
+    <circle cx="704" cy="396" r="46" fill="#A78BFA" fill-opacity=".18" stroke="#A78BFA" stroke-opacity=".42"/>
+  </g>
+  <path d="M192 520h576" stroke="#fff" stroke-opacity=".12"/>
+  <path d="M192 520c150-50 300-50 450 0" stroke="#67E8F9" stroke-opacity=".32" stroke-width="3"/>
+</svg>

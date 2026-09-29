@@ -1,0 +1,8 @@
+interface:
+  display_name: "Motion Atlas Generator"
+  short_description: "Generate premium UI motion snippets."
+  brand_color: "#6EA8FF"
+  default_prompt: "Use $motion-atlas-generator to generate a new Motion Atlas animation."
+
+policy:
+  allow_implicit_invocation: true

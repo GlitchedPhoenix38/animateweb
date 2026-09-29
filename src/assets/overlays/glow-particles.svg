@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Animated neon glow particles overlay">
+  <defs>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="trail" x1="0" x2="1">
+      <stop offset="0" stop-color="#67E8F9" stop-opacity="0"/>
+      <stop offset=".45" stop-color="#6EA8FF" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="none"/>
+  <g filter="url(#glow)">
+    <path d="M146 286h430" stroke="url(#trail)" stroke-width="1.5" opacity=".65">
+      <animate attributeName="stroke-dasharray" values="20 410;180 250;20 410" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="0;-430" dur="8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M1114 730h520" stroke="url(#trail)" stroke-width="1.5" opacity=".52">
+      <animate attributeName="stroke-dasharray" values="28 492;210 310;28 492" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="0;-520" dur="10s" repeatCount="indefinite"/>
+    </path>
+    <g fill="#6EA8FF">
+      <circle cx="240" cy="186" r="2.6"><animate attributeName="opacity" values=".2;.9;.2" dur="4s" repeatCount="indefinite"/></circle>
+      <circle cx="530" cy="628" r="1.9"><animate attributeName="opacity" values=".1;.7;.1" dur="5.5s" repeatCount="indefinite"/></circle>
+      <circle cx="820" cy="342" r="2.2"><animate attributeName="opacity" values=".15;.78;.15" dur="6s" repeatCount="indefinite"/></circle>
+      <circle cx="1280" cy="198" r="2.4"><animate attributeName="opacity" values=".2;.86;.2" dur="4.8s" repeatCount="indefinite"/></circle>
+      <circle cx="1610" cy="520" r="1.8"><animate attributeName="opacity" values=".1;.7;.1" dur="5.8s" repeatCount="indefinite"/></circle>
+      <circle cx="1470" cy="842" r="2.7"><animate attributeName="opacity" values=".18;.88;.18" dur="6.4s" repeatCount="indefinite"/></circle>
+    </g>
+    <g fill="#A78BFA" opacity=".72">
+      <circle cx="366" cy="820" r="1.7"/>
+      <circle cx="972" cy="188" r="1.8"/>
+      <circle cx="1158" cy="592" r="2.1"/>
+      <circle cx="1768" cy="250" r="1.5"/>
+    </g>
+  </g>
+</svg>

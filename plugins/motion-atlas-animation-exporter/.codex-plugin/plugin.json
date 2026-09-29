@@ -1,0 +1,47 @@
+{
+  "name": "motion-atlas-animation-exporter",
+  "version": "0.1.0",
+  "description": "Copy, export, and integrate Motion Atlas animation patterns for developer and design workflows.",
+  "author": {
+    "name": "Motion Atlas",
+    "email": "dev@motion-atlas.local",
+    "url": "https://motion-atlas.local"
+  },
+  "homepage": "https://motion-atlas.local/plugins/animation-exporter",
+  "repository": "https://motion-atlas.local/repository",
+  "license": "MIT",
+  "keywords": [
+    "motion-design",
+    "framer-motion",
+    "animation-export",
+    "design-tools"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks.json",
+  "mcpServers": "./.mcp.json",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "Motion Atlas Animation Exporter",
+    "shortDescription": "Copy and export Motion Atlas animations as Framer, CSS, JSON, or design-tool tokens.",
+    "longDescription": "A developer-friendly Motion Atlas plugin for copying production animation snippets, exporting animation recipes as JSON or CSS, and mapping motion tokens into design tools such as Figma, Framer, and Lottie-style handoff workflows.",
+    "developerName": "Motion Atlas",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Copy",
+      "Export",
+      "Design Tool Integration"
+    ],
+    "websiteURL": "https://motion-atlas.local",
+    "privacyPolicyURL": "https://motion-atlas.local/privacy",
+    "termsOfServiceURL": "https://motion-atlas.local/terms",
+    "defaultPrompt": [
+      "Export this animation as CSS.",
+      "Copy the Framer Motion snippet.",
+      "Create design-tool motion tokens."
+    ],
+    "brandColor": "#6EA8FF",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/logo.svg",
+    "screenshots": []
+  }
+}

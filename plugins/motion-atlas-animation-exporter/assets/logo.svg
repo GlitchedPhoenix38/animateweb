@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 128" role="img" aria-label="Motion Atlas Animation Exporter logo">
+  <defs>
+    <linearGradient id="mark" x1="20" x2="108" y1="20" y2="108">
+      <stop stop-color="#67E8F9"/>
+      <stop offset=".55" stop-color="#6EA8FF"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="128" rx="28" fill="#03040A"/>
+  <path d="M34 82c19-42 42-42 65-34" fill="none" stroke="url(#mark)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M80 38 104 50 80 64z" fill="url(#mark)"/>
+  <text x="136" y="58" fill="#F7F8FF" font-family="Arial, sans-serif" font-size="26" font-weight="700">Motion Atlas</text>
+  <text x="136" y="88" fill="#A7ADBE" font-family="Arial, sans-serif" font-size="18">Animation Exporter</text>
+</svg>
